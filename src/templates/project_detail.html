@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.name }} - PromptForge{% endblock %}
+
+{% block content %}
+<div class="project-detail">
+    <h2>{{ project.name }}</h2>
+    
+    <div class="detail-section">
+        <h3>Description</h3>
+        <p>{{ project.description or "No description provided." }}</p>
+    </div>
+    
+    <div class="detail-section">
+        <h3>Refined Prompt</h3>
+        {% if project.refined_prompt %}
+            <div class="code-container">
+                <pre><code>{{ project.refined_prompt }}</code></pre>
+            </div>
+        {% else %}
+            <p class="placeholder-text">Prompt not yet generated.</p>
+        {% endif %}
+    </div>
+    
+    <div class="detail-section">
+        <h3>Suggested Frameworks & Languages</h3>
+        {% if project.frameworks_languages %}
+            <div class="code-container">
+                <pre><code>{{ project.frameworks_languages }}</code></pre>
+            </div>
+        {% else %}
+            <p class="placeholder-text">Not yet specified.</p>
+        {% endif %}
+    </div>
+    
+    <div class="detail-section">
+        <h3>Development Checklist</h3>
+        {% if project.checklist_steps %}
+            <textarea class="copyable-content" readonly rows="10">{{ project.checklist_steps }}</textarea>
+        {% else %}
+            <p class="placeholder-text">Checklist not yet generated.</p>
+        {% endif %}
+    </div>
+    
+    <div class="detail-section">
+        <h3>Cursor Rules Content</h3>
+        {% if project.cursor_rules_content %}
+            <textarea class="copyable-content" readonly rows="15">{{ project.cursor_rules_content }}</textarea>
+        {% else %}
+            <p class="placeholder-text">Cursor rules not yet generated.</p>
+        {% endif %}
+    </div>
+    
+    <div class="detail-section">
+        <p><strong>Created:</strong> {{ project.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+        <p><strong>Last Updated:</strong> {{ project.updated_at.strftime('%Y-%m-%d %H:%M') }}</p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="{{ url_for('main.projects') }}" class="btn btn-secondary">Back to Projects</a>
+    </div>
+</div>
+{% endblock %} 

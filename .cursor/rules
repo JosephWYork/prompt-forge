@@ -1,0 +1,59 @@
+// .cursor/rules
+// This file contains project-specific guidelines and context for Cursor Pro's AI.
+// It is dynamically populated by the Project Scaffolding Web App to ensure
+// consistent, high-quality, and project-aligned AI assistance.
+
+// --- PROJECT CONTEXT AND OBJECTIVES ---
+// This section defines the high-level purpose and desired outcomes of this project.
+// The AI must continuously align its suggestions and code generation with these objectives.
+
+// PROJECT NAME: PromptForge
+// PROJECT TYPE: Python Flask Web Application (Project Scaffolding App)
+// PRIMARY GOAL: To streamline the creation of new coding projects by enabling iterative requirement refinement with AI, generating standardized project files, and outlining development steps.
+// KEY OUTCOME: A secure, scalable, and highly available web app that significantly accelerates project initiation by ensuring comprehensive, AI-aligned project definitions.
+// TARGET AUDIENCE/USERS: Individual developers (primarily the developer of this app).
+// DEPLOYMENT ENVIRONMENT: Local Windows PC (initial), with potential for future Azure App Service deployment.
+// NON-FUNCTIONAL REQUIREMENTS: Low Cost, Maintainability, Extensibility, Usability, Consistency, Reliability.
+
+// --- ARCHITECTURAL AND DESIGN GUIDELINES ---
+// Adhere to these architectural principles throughout development.
+
+// ARCHITECTURAL PATTERN: Monolith (for initial simplicity), with clear separation of concerns for future microservice potential.
+// DESIGN PRINCIPLES: Favor modularity, loose coupling, high cohesion, and single responsibility. Promote clear separation of concerns (e.g., UI, business logic, data access).
+// DATA FLOW: Standard request-response pattern for Flask web app.
+// ERROR HANDLING: Implement robust, standardized error handling mechanisms (e.g., Flask error handlers). Errors should be logged comprehensively and returned with clear, actionable messages.
+// SECURITY: Prioritize security best practices for web applications (e.g., input validation, secure session management, protecting against XSS/CSRF). Assume local access only initially, but design for public internet exposure if deployed.
+// SCALABILITY: Design components to be horizontally scalable and stateless where possible, anticipating future cloud deployment.
+
+// --- TECHNOLOGY STACK AND CODING STANDARDS ---
+// Use the following technologies and adhere to these coding conventions.
+
+// PRIMARY LANGUAGE: Python
+// FRAMEWORK(S): Flask
+// DATABASE(S): SQLite (for development/local), consider PostgreSQL for production readiness.
+// ORM/ODM (if applicable): SQLAlchemy
+// PACKAGE MANAGER: pip
+// CODING STYLE: Adhere strictly to Black formatting and Flake8 linting rules. Code must be clean, readable, and follow PEP 8.
+// NAMING CONVENTIONS: Use descriptive and consistent naming following Python's PEP 8 (snake_case for variables/functions, PascalCase for classes).
+// TYPE HINTING: All new Python code must include comprehensive type hints.
+// COMMENTING/DOCSTRINGS: Provide clear, concise docstrings for all modules, classes, and functions, explaining purpose, parameters, and return values. Use Google style for Python docstrings.
+
+// --- DEVELOPMENT LIFECYCLE AND QA ---
+// Follow these guidelines for development and quality assurance.
+
+// TEST-DRIVEN DEVELOPMENT (TDD): Implement new features using TDD. Write failing tests first, then write code to pass them.
+// UNIT TESTING: All generated code must be accompanied by comprehensive, fully automated unit tests. Use Pytest for testing.
+// AUTOMATION: Automate all feasible development, testing, build, and deployment steps. Propose and generate necessary Bash/Python scripts for automation.
+// VERSION CONTROL: Ensure all code is designed for seamless integration with Git-based version control (GitHub). Promote atomic commits with clear, descriptive messages.
+// CODE REVIEW: Design code with readability and maintainability for future code reviews in mind.
+
+// --- AI INTERACTION GUIDELINES (for Cursor Pro specifically) ---
+// These rules guide how Cursor Pro's AI should assist in this project.
+
+// CONTEXTUAL AWARENESS: When generating code or suggestions, always prioritize existing project code, architectural patterns defined herein, and established coding styles.
+// ITERATIVE REFINEMENT: For complex tasks, propose solutions incrementally. Break down large problems into smaller, manageable, testable steps.
+// CLARIFICATION: If any ambiguity exists in a prompt, always ask for specific clarification before attempting to generate code. Do not make assumptions.
+// PROMPT CRITIQUE: Before responding to a prompt, briefly critique it for clarity, completeness, and optimal phrasing for AI code generation. Suggest improvements.
+// ERROR HANDLING: When fixing errors, analyze the error message thoroughly and explain the root cause and proposed fix clearly.
+// DATA MODELS: For all database-related code, strictly adhere to the SQLAlchemy models defined in `src/models.py`.
+// TEMPLATING: When generating HTML, use Flask's Jinja2 templating syntax and extend/include existing templates where appropriate.

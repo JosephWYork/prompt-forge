@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home - PromptForge{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Welcome to PromptForge</h2>
+    <p>Streamline your project creation with AI-powered requirement refinement.</p>
+    <p>PromptForge helps you:</p>
+    <ul style="margin: 1rem 0 1rem 2rem;">
+        <li>Refine project requirements through iterative AI conversations</li>
+        <li>Generate standardized project files following best practices</li>
+        <li>Create detailed development checklists</li>
+        <li>Export custom Cursor Pro rules for your projects</li>
+    </ul>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="{{ url_for('main.create_project') }}" class="btn">Create Project</a>
+        <a href="{{ url_for('main.projects') }}" class="btn btn-secondary">View Projects</a>
+    </div>
+</div>
+{% endblock %} 

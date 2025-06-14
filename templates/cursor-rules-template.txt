@@ -1,0 +1,57 @@
+// .cursor/rules
+// This file contains project-specific guidelines and context for Cursor Pro's AI.
+// It is dynamically populated by the Project Scaffolding Web App to ensure
+// consistent, high-quality, and project-aligned AI assistance.
+
+// --- PROJECT CONTEXT AND OBJECTIVES ---
+// This section defines the high-level purpose and desired outcomes of this project.
+// The AI must continuously align its suggestions and code generation with these objectives.
+
+// PROJECT NAME: {{ PROJECT_NAME_PLACEHOLDER }}
+// PROJECT TYPE: {{ PROJECT_TYPE_PLACEHOLDER }} (e.g., Python Flask REST API, React SPA, Node.js Microservice)
+// PRIMARY GOAL: {{ PRIMARY_GOAL_PLACEHOLDER }}
+// KEY OUTCOME: {{ KEY_OUTCOME_PLACEHOLDER }}
+// TARGET AUDIENCE/USERS: {{ TARGET_AUDIENCE_PLACEHOLDER }}
+// DEPLOYMENT ENVIRONMENT: {{ DEPLOYMENT_ENVIRONMENT_PLACEHOLDER }} (e.g., Azure App Service, Kubernetes, On-premise)
+// NON-FUNCTIONAL REQUIREMENTS: {{ NON_FUNCTIONAL_REQUIREMENTS_PLACEHOLDER }} (e.g., High Availability, Low Latency, Security Compliance, Scalability)
+
+// --- ARCHITECTURAL AND DESIGN GUIDELINES ---
+// Adhere to these architectural principles throughout development.
+
+// ARCHITECTURAL PATTERN: {{ ARCHITECTURAL_PATTERN_PLACEHOLDER }} (e.g., Microservices, Monolith, Serverless, Event-Driven)
+// DESIGN PRINCIPLES: Favor modularity, loose coupling, high cohesion, and single responsibility. Promote clear separation of concerns.
+// DATA FLOW: {{ DATA_FLOW_DESCRIPTION_PLACEHOLDER }} (e.g., Unidirectional data flow, CQRS, Request-Response)
+// ERROR HANDLING: Implement robust, standardized error handling mechanisms. Errors should be logged comprehensively and returned with clear, actionable messages.
+// SECURITY: Prioritize security best practices. Implement input validation, secure authentication/authorization, and mitigate common vulnerabilities (e.g., XSS, SQLi, CSRF). Assume public internet exposure.
+// SCALABILITY: Design components to be horizontally scalable and stateless where possible.
+
+// --- TECHNOLOGY STACK AND CODING STANDARDS ---
+// Use the following technologies and adhere to these coding conventions.
+
+// PRIMARY LANGUAGE: {{ PRIMARY_LANGUAGE_PLACEHOLDER }} (e.g., Python, TypeScript, Go)
+// FRAMEWORK(S): {{ FRAMEWORK_PLACEHOLDER }} (e.g., Flask, FastAPI, React, Next.js, Express)
+// DATABASE(S): {{ DATABASE_PLACEHOLDER }} (e.g., PostgreSQL, MongoDB, SQLite)
+// ORM/ODM (if applicable): {{ ORM_ODM_PLACEHOLDER }} (e.g., SQLAlchemy, Mongoose, Prisma)
+// PACKAGE MANAGER: {{ PACKAGE_MANAGER_PLACEHOLDER }} (e.g., pip, npm, yarn, go mod)
+// CODING STYLE: Adhere strictly to the project's linter and formatter rules (e.g., Black/Flake8 for Python, ESLint/Prettier for JS/TS).
+// NAMING CONVENTIONS: Use descriptive and consistent naming for variables, functions, classes, and files. (e.g., snake_case for Python, camelCase for JS/TS, PascalCase for classes).
+// TYPE HINTING: All new code must include comprehensive type hints where supported by the language.
+// COMMENTING/DOCSTRINGS: Provide clear, concise docstrings for all modules, classes, and functions, explaining purpose, parameters, and return values. Use Google style for Python docstrings.
+
+// --- DEVELOPMENT LIFECYCLE AND QA ---
+// Follow these guidelines for development and quality assurance.
+
+// TEST-DRIVEN DEVELOPMENT (TDD): Implement new features using TDD. Write failing tests first, then write code to pass them.
+// UNIT TESTING: All generated code must be accompanied by comprehensive, fully automated unit tests. Use the project's established testing framework (e.g., Pytest, Jest).
+// AUTOMATION: Automate all feasible development, testing, build, and deployment steps. Propose and generate necessary scripts (Bash, Python) for automation.
+// VERSION CONTROL: Ensure all code is designed for seamless integration with Git-based version control (GitHub). Promote atomic commits with clear, descriptive messages.
+// CODE REVIEW: Design code with readability and maintainability for future code reviews in mind.
+
+// --- AI INTERACTION GUIDELINES (for Cursor Pro specifically) ---
+// These rules guide how Cursor Pro's AI should assist in this project.
+
+// CONTEXTUAL AWARENESS: When generating code or suggestions, always prioritize existing project code, architectural patterns defined herein, and established coding styles.
+// ITERATIVE REFINEMENT: For complex tasks, propose solutions incrementally. Break down large problems into smaller, manageable, testable steps.
+// CLARIFICATION: If any ambiguity exists in a prompt, always ask for specific clarification before attempting to generate code. Do not make assumptions.
+// PROMPT CRITIQUE: Before responding to a prompt, briefly critique it for clarity, completeness, and optimal phrasing for AI code generation. Suggest improvements.
+// ERROR HANDLING: When fixing errors, analyze the error message thoroughly and explain the root cause and proposed fix clearly.

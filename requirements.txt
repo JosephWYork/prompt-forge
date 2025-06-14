@@ -1,0 +1,14 @@
+# Core dependencies
+Flask==3.0.0
+SQLAlchemy==2.0.41
+Gunicorn==21.2.0
+python-dotenv==1.0.0
+google-generativeai==0.3.2
+
+# Development dependencies
+pytest==7.4.3
+black==23.12.1
+flake8==7.0.0
+mypy==1.8.0
+types-Flask==1.1.6
+types-SQLAlchemy==1.4.53.38 

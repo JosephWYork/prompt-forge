@@ -1,0 +1,392 @@
+/* PromptForge Basic Styling */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Project list */
+.project-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.project-item a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-item .date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Project detail */
+.project-detail {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.detail-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.detail-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detail-section h3 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.detail-section pre {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* Messages */
+.message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #7f8c8d;
+    margin-top: 3rem;
+}
+
+/* Form styles */
+.project-form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #3498db;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+/* Code containers for project details */
+.code-container {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.code-container pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.code-container code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #212529;
+}
+
+/* Copyable content textareas */
+.copyable-content {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.copyable-content:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Placeholder text for empty fields */
+.placeholder-text {
+    color: #6c757d;
+    font-style: italic;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Improve project list styling */
+.project-item p {
+    color: #666;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Chat interface styles */
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chat-container h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    margin-bottom: 1.5rem;
+}
+
+.chat-message {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+.chat-message:last-child {
+    margin-bottom: 0;
+}
+
+.chat-message.user {
+    background-color: #e3f2fd;
+    margin-left: 2rem;
+}
+
+.chat-message.assistant {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    margin-right: 2rem;
+}
+
+.chat-message strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.chat-message p {
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.chat-input-form {
+    margin-bottom: 1rem;
+}
+
+.chat-input-group {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.chat-input-group textarea {
+    flex: 1;
+    min-height: 60px;
+}
+
+.chat-input-group .btn {
+    margin: 0;
+    padding: 0.75rem 1.5rem;
+    height: fit-content;
+}
+
+.approve-form {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e9ecef;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+
+.btn-approve:hover {
+    background-color: #218838;
+} 
